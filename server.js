@@ -21,11 +21,11 @@ var articles = {
     content: ``,  
   },
   'article-three': {
-    title: ``,
-    links: ``,
-    heading: ``,
-    date: ``,
-    content: ``,  
+    title: `h`,
+    links: `h`,
+    heading: `h`,
+    date: `h`,
+    content: `h`,  
   }
 };
 
