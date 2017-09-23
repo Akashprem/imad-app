@@ -107,7 +107,7 @@ function createTemplate(cont) {
   var htmlTemplate = `
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="ui/style.css" />
         <title>
             ${title}
         </title>
