@@ -122,7 +122,9 @@ function createTemplate(cont) {
             ${date}
         </div>
         <div class="container">
+        <div>
             ${content}
+        </div>
         </div>
     </body>
 </html> `;
