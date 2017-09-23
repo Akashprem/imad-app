@@ -5,6 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+app.use(express.static(__dirname + '/public'));
+
 var articles = {
   'article-one': {
     title: `
@@ -105,7 +107,7 @@ function createTemplate(cont) {
   var htmlTemplate = `
 <html>
     <head>
-        <link href="/ui/style.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
         <title>
             ${title}
         </title>
