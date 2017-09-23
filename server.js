@@ -7,11 +7,33 @@ app.use(morgan('combined'));
 
 var articles = {
   'article-one': {
-    title: ``,
-    links: ``,
-    heading: ``,
-    date: ``,
-    content: ``,  
+    title: `
+    Article One | Akash Premrajan
+    `,
+    links: `
+    <a href="/">Home</a>
+     | 
+    <a href="/article-two">Article Two</a>
+     | 
+    <a href="/article-three">Article Three</a>
+    `,
+    heading: `
+    Article One
+    `,
+    date: `
+    Sep 23, 2017
+    `,
+    content: `
+    <p>
+        This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
+    </p>
+    <p>
+        This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
+    </p>
+    <p>
+        This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
+    </p>
+    `,  
   },
   'article-two': {
     title: ``,
