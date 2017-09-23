@@ -1,9 +1,9 @@
 console.log('Loaded!');
 
 counter = document.getElementById("counter");
+count = parseInt(document.getElementById("count").value);
 
 counter.onclick = function() {
-    count = parseInt(document.getElementById("count").value);
     count = count + 1;
-    document.getElementById("count").innerHTML = count;
+    count.innerHTML = count;
 };
