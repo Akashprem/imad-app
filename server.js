@@ -121,7 +121,7 @@ function createTemplate(cont) {
         <div>
             ${date}
         </div>
-        <div class="content">
+        <div class="container2">
             ${content}
         </div>
     </body>
