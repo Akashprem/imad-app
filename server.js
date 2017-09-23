@@ -108,7 +108,7 @@ function createTemplate(cont) {
         <title>
             ${title}
         </title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="type/css" href="style.css">
     </head>
     <body>
         <div>
