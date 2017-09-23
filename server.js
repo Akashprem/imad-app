@@ -36,19 +36,63 @@ var articles = {
     `,  
   },
   'article-two': {
-    title: ``,
-    links: ``,
-    heading: ``,
-    date: ``,
-    content: ``,  
+    title: `
+    Article Two | Akash Premrajan
+    `,
+    links: `
+    <a href="/">Home</a>
+     | 
+    <a href="/article-three">Article Three</a>
+     | 
+    <a href="/article-one">Article One</a>
+    `,
+    heading: `
+    Article Two
+    `,
+    date: `
+    Sep 23, 2017
+    `,
+    content: `
+    <p>
+        This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
+    </p>
+    <p>
+        This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
+    </p>
+    <p>
+        This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
+    </p>
+    `,  
   },
   'article-three': {
-    title: `h`,
-    links: `h`,
-    heading: `h`,
-    date: `h`,
-    content: `h`,  
-  }
+    title: `
+    Article Three | Akash Premrajan
+    `,
+    links: `
+    <a href="/">Home</a>
+     | 
+    <a href="/article-one">Article One</a>
+     | 
+    <a href="/article-two">Article Two</a>
+    `,
+    heading: `
+    Article Three
+    `,
+    date: `
+    Sep 23, 2017
+    `,
+    content: `
+    <p>
+        This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article.
+    </p>
+    <p>
+        This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article.
+    </p>
+    <p>
+        This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article.
+    </p>
+    `,  
+  },
 };
 
 function createTemplate(cont) {
@@ -93,6 +137,10 @@ app.get('/', function (req, res) {
 app.get('/:articleName', function (req, res) {
   articleName = req.params.articleName
   res.send(createTemplate(articles[articleName]));
+});
+
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
 app.get('/ui/style.css', function (req, res) {
