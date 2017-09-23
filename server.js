@@ -50,7 +50,7 @@ var articles = {
     Article Two
     `,
     date: `
-    Sep 23, 2017
+    Oct 24, 2018
     `,
     content: `
     <p>
@@ -79,7 +79,7 @@ var articles = {
     Article Three
     `,
     date: `
-    Sep 23, 2017
+    Nov 25, 2019
     `,
     content: `
     <p>
