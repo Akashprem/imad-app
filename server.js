@@ -108,7 +108,7 @@ function createTemplate(cont) {
         <title>
             ${title}
         </title>
-        <link rel="stylesheet" type="type/css" href="style.css">
+        <link rel="stylesheet" type="type/css" href="/ui/style.css">
     </head>
     <body>
         <div>
@@ -122,9 +122,7 @@ function createTemplate(cont) {
             ${date}
         </div>
         <div class="container">
-        <div>
             ${content}
-        </div>
         </div>
     </body>
 </html> `;
