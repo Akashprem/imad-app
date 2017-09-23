@@ -108,7 +108,7 @@ function createTemplate(cont) {
         <title>
             ${title}
         </title>
-        <link href="/ui/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/ui/style.css" />
     </head>
     <body>
         <div>
